@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const indroduce = (name,shirt)=>{
+            const person ={
+                name:name,
+                shirt:shirt,
+                Available:100000,
+                Withdrawl:50000,
+                networth:function(){
+                    return this.Available - this.Withdrawl
+                }
+            }
+            const intro=`Hi, my name is ${person.name} and the color of my shirt is ${person.shirt} and my networth is $ ${person.networth()}`
+            return intro 
+        }
+        document.write(indroduce('saikumar','white'))
+    </script>
+</body>
+</html>
